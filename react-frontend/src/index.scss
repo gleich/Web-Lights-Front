@@ -1,0 +1,80 @@
+//write color in hex
+//traffic-light color
+$whole: #333;
+//actual traffic-lights
+$color1: #ff0000; //red
+$color2: #ffff00; //yellow
+$color3: #00ff00; //green
+
+body {
+  background-image: url(https://f.cl.ly/items/2K0P3z2y3X3c052f2B3Y/Image%202013.04.30%2021%3A28%3A02.png);
+}
+
+#traffic-light {
+  //main traffic light
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  margin-left: -60px;
+  margin-top: -160px;
+  background-color: $whole;
+  width: 120px;
+  height: 320px;
+  border-radius: 30px;
+}
+
+input {
+  //remove default style
+  appearance: none;
+  //make the traffic lights appear
+  position: relative;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  margin-left: -40px;
+  background-color: grey;
+  vertical-align: middle;
+  border-radius: 100%;
+  display: block;
+  &#color1 {
+    background-color: darken($color1, 15%);
+    &:hover {
+      background-color: $color1;
+      box-shadow: 0 0 6em lighten($color1, 10%);
+    }
+    &:checked {
+      background-color: $color1;
+      box-shadow: 0 0 6em lighten($color1, 10%);
+    }
+  }
+  &#color2 {
+    background-color: darken($color2, 15%);
+    &:hover {
+      background-color: $color2;
+      box-shadow: 0 0 6em lighten($color2, 10%);
+    }
+    &:checked {
+      background-color: $color2;
+      box-shadow: 0 0 6em lighten($color2, 10%);
+    }
+  }
+  &#color3 {
+    background-color: darken($color3, 15%);
+    &:hover {
+      background-color: $color3;
+      box-shadow: 0 0 6em lighten($color3, 10%);
+    }
+    &:checked {
+      background-color: $color3;
+      box-shadow: 0 0 6em lighten($color3, 10%);
+    }
+  }
+}
+
+//extra stuff
+* {
+  user-select: none;
+  outline: none;
+}
