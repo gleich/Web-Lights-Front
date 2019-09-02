@@ -2,10 +2,7 @@
   "name": "react-frontend",
   "version": "0.1.0",
   "private": true,
-<<<<<<< HEAD
   "homepage": "https://web-lights.github.io/Web-Lights-Front/",
-=======
->>>>>>> 4f063bbf050fada81fa5f564d4b5cce05d9403de
   "dependencies": {
     "eslint": "^6.3.0",
     "eslint-plugin-import": "^2.18.2",
@@ -18,12 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-<<<<<<< HEAD
-    "eject": "react-scripts eject"
-=======
     "eject": "react-scripts eject",
-"travis": "npm install && react-scripts build"
->>>>>>> 4f063bbf050fada81fa5f564d4b5cce05d9403de
+    "travis": "npm install && react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
