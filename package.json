@@ -2,6 +2,7 @@
   "name": "react-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://web-lights.github.io/Web-Lights-Front/",
   "dependencies": {
     "eslint": "^6.3.0",
     "eslint-plugin-import": "^2.18.2",
