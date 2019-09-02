@@ -35,7 +35,7 @@ componentWillMount = () => {
     render() {
         let lightlist=[]
         for(let i=1;i<4;i++) {
-            lightlist.push(<input checked={this.state.checked==(i)} onChange={this.radioChanged} type="radio" name="traffic-light-color" id={"color"+i} value={i} />)
+            lightlist.push(<input checked={this.state.checked===(i)} onChange={this.radioChanged} type="radio" name="traffic-light-color" id={"color"+i} value={i} />)
         }
       return (
 <div id="traffic-light">
